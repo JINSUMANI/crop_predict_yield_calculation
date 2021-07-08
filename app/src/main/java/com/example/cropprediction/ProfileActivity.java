@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
@@ -55,6 +56,7 @@ public class ProfileActivity extends AppCompatActivity implements HistoryRecycle
     ArrayList<HistoryModel> historyModels=new ArrayList<>();
     ImageView signout;
     public static final int PICK_IMAGE = 1;
+    FloatingActionButton editbutton;
 
     byte[] imageToUpload;
 
@@ -117,6 +119,12 @@ public class ProfileActivity extends AppCompatActivity implements HistoryRecycle
                 startActivity(new Intent(ProfileActivity.this,LoginActivity.class));
             }
         });
+        editbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateuser();
+            }
+        });
 
 
     }
@@ -128,6 +136,7 @@ public class ProfileActivity extends AppCompatActivity implements HistoryRecycle
         recyclerView=findViewById(R.id.historyRecycler);
         addProfilepicture=findViewById(R.id.addProfilePicture);
         signout=findViewById(R.id.signout);
+        editbutton=findViewById(R.id.editbutton);
     }
 
     private void setProfilePicInActivity(){
@@ -287,6 +296,11 @@ public class ProfileActivity extends AppCompatActivity implements HistoryRecycle
                                 }
                             });
         }
+    }
+    public void updateuser(){
+        FirebaseFirestore firebaseFirestore=FirebaseFirestore.getInstance();
+        UserModel user=new UserModel("","","");
+        firebaseFirestore.collection("Users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(user);
     }
 
     @Override
