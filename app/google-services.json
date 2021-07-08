@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491707858039",
+    "project_id": "croppredictionandroid",
+    "storage_bucket": "croppredictionandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491707858039:android:8045081c66e2e5698c1a72",
+        "android_client_info": {
+          "package_name": "com.example.cropprediction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491707858039-7hkruiv0epka5eg73sdsec6vaeso3q95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2v_hoMAFJB3dL9F0UGpj4NN697hWdtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491707858039-7hkruiv0epka5eg73sdsec6vaeso3q95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

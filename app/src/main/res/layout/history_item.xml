@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/04/21">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/cropName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:breakStrategy="balanced"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Rice"
+                android:textColor="@color/black"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"></TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/yield"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="3.456unit"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="26sp">
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

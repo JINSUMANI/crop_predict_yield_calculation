@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_dialog_fragment">
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_width="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_height="40dp">
+    </ImageView>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black">
+    </View>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_weight="1"
+            android:id="@+id/cropnameserver"
+            android:breakStrategy="balanced"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:text="Rice"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        </TextView>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:breakStrategy="balanced"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeStepGranularity="1sp"
+            android:paddingRight="30dp"
+            app:autoSizeTextType="uniform"
+
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:id="@+id/cropyieldserver"
+            android:text="3.416"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/earningsMessage"
+            android:text="Based on the current Market Price\nYou can earn upto"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_weight="1"
+            android:breakStrategy="balanced"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:id="@+id/earnings"
+            android:text="300000 ₹/H"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:id="@+id/message"
+            android:breakStrategy="balanced"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:text="You can also try these as Inter crops"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionList">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

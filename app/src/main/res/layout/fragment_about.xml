@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/signature_green_top_bar">
+    </ImageView>
+    <TextView
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawableTint="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginLeft="45dp"
+        android:text="About the App"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <View
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        ></View>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:drawableTint="@color/black"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Grow crop is a yield predicting app designed typically for those agriculture enthusiasts across the globe. Grow crop's aim is to provide hustle free and brisk yield results by providing minor details. This app is an assurance of credibility that just by providing brief particulars of your land shall help you to yield more."
+        android:textColor="@color/black"
+        android:breakStrategy="balanced"
+        app:autoSizeMaxTextSize="16sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp">
+    </TextView>
+
+    <TextView
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawableTint="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="45dp"
+        android:text="Reach Us"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        ></View>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon"
+                android:id="@+id/mailIntent"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/phoneIntent"
+                android:src="@drawable/phone"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
